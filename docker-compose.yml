@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    container_name: singh_Arshpreet_coding_assignment11
+    build:
+      context: .
+    ports:
+      - "7775:3000"
+    volumes:
+      - .:/singh_Arshpreet_site
+    command: ["npm", "start"]
